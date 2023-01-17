@@ -146,29 +146,3 @@ for index, w_count in enumerate(count_len_words.items()):
     print( 
     "{0:3}|{1:20}|{2}".format(w_count[0], "*" * w_count[1], w_count[1])
     )
-
-
-
-
-quit()
-pocet_slov_full = list()
-for pocet_slov in range(len(sel_edit_text)):
-    if pocet_slov == 0:
-        pocet_slov_full = 1
-    elif pocet_slov >= 1:
-        pocet_slov_full = pocet_slov_full + 1
-
-print(pocet_slov_full)
-
-
-a_words_count = len([
-    words_count
-    for words_count in range(len(sel_edit_text))
-])
-
-print(all_words_count)
-
-all_len_words_count = {
-    len_words: len(len_words)
-    for len_words in sel_edit_text
-}
